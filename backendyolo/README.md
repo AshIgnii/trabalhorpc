@@ -19,3 +19,15 @@ uv run main.py
 ```bash
 uv run python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. proto/detection.proto
 ```
+
+## Rodar backend node
+
+```bash
+node server.js
+```
+
+## Rodar interface web
+
+```bash
+python -m http.server 8080
+```
