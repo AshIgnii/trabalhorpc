@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Teste Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Selecione uma imagem para visualizar os objetos detectados.</h2>
+        </header>
+
+        <main>
+            <div class="upload-area">
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+
+            <div id="results" class="results" style="display: none;">
+                <p id="loading" style="display: none;">Analisando imagem, por favor aguarde...</p>
+                <div class="canvas-wrapper">
+                    <canvas id="image-canvas"></canvas>
+                </div>
+
+                <div class="list-wrapper">
+                    <h4>Objetos Detectados:</h4>
+                    <ul id="detections-list"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
