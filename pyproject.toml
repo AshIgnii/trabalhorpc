@@ -1,0 +1,14 @@
+[project]
+name = "yolorpc"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "ultralytics>=8.4",
+    "grpcio>=1.81",
+    "grpcio-tools>=1.81",
+    "pillow>=11",
+    "numpy>=2",
+]
+
+[project.scripts]
+yolorpc = "main:main"

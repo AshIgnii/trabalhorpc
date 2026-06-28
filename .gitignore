@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Pesos do modelo YOLO (baixados sob demanda)
+*.pt
+*.onnx

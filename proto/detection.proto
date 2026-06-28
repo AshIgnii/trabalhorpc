@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package yolorpc;
+
+service Detector {
+  rpc Detect(DetectRequest) returns (DetectResponse);
+}
+
+message DetectRequest {
+  bytes image = 1;
+}
+
+message BoundingBox {
+  float x1 = 1;
+  float y1 = 2;
+  float x2 = 3;
+  float y2 = 4;
+}
+
+message Detection {
+  string label = 1;
+  float confidence = 2;
+  BoundingBox box = 3;
+}
+
+message DetectResponse {
+  repeated Detection detections = 1;
+  int32 width = 2;
+  int32 height = 3;
+}

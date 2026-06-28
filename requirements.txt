@@ -1,0 +1,5 @@
+ultralytics>=8.4
+grpcio>=1.81
+grpcio-tools>=1.81
+pillow>=11
+numpy>=2
